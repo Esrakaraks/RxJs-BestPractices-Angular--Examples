@@ -1,14 +1,23 @@
-<input type="input" [formControl]="search" />
-<select [formControl]="selectCurrency">
-    <option *ngFor="let item of currency" [value]="item">{{item}}
-</option>
-</select>
+<div class="row">
+<div class="col-4">
+    <input type="input" [formControl]="search" />
+    <select [formControl]="selectCurrency">
+        <option *ngFor="let item of currency" [value]="item">{{item}}
+        </option>
+    </select>
+</div>
 
 <div class="exampleCss">
     <app-example-a></app-example-a>
 </div>
 <div class="exampleCss">
     <app-example-b></app-example-b>
+</div>
+</div>
+<div class="row">
+<div  class="col-12">
+    <app-example-c></app-example-c>
+</div>
 </div>
 
 <router-outlet></router-outlet>
